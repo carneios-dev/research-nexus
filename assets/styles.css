@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002855;
+    color: #fff;
+}
+
+h1, h3 {
+    color: #FF5F05;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.loading-parent {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget {
+    background-color: #001630;
+    border: 1px solid #FFA07A;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001F42;
+    color: #FF5F05;
+}
+
+.dccGraph {
+    height: 100% !important;
+}
+
+/*
+    This is a workaround to fix the issue with the fixed content in the Dash DataTable
+    and it's applying a `margin-left: -1px` to the fixed content.
+ */
+.dash-spreadsheet-container .dash-fixed-content {
+    margin-left: 0 !important;
+}
+
+.dash-table-container .dash-spreadsheet-inner td {
+    border: 1px solid #FFA07A !important;
+    background-color: #002855 !important;
+    color: #FFA07A !important;
+}
+
+.dash-table-container .dash-spreadsheet-inner tr:hover td {
+    background-color: #FF5F05 !important;
+    color: #002855 !important;
+    cursor: default;
+}

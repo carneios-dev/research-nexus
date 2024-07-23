@@ -1,0 +1,7 @@
+dash
+mysql-connector-python
+pymongo
+neo4j
+python-dotenv
+wordcloud
+networkx
